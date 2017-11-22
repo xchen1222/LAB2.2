@@ -10,6 +10,7 @@ public class Student extends Person {
 		this.gradeLevel = gradeLevel;
 		this.major = major;
 	}
+	
 	public double getGpa () {
 		return gpa;
 	}
