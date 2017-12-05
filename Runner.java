@@ -6,34 +6,36 @@ public class Runner {
 		Random rand = new Random();
 		int x = rand.nextInt(5);
 		int y = rand.nextInt(5);
+		int z = rand.nextInt(1);
 		int age = rand.nextInt(89)+10;
 		int gpa = rand.nextInt(50)+50;
 		
+		String[] major =  {"Math " ,"Physics " , "Biology " , "Architecture " , "Economics " };
+		String[] gender = {"Male", "Female"};
+		String[] firstNames = {"a " , "B " , "c ", "d " , "e ", "f " };
+		String[] familyNames = {"d " , "e ", "f ", "a " , "B " , "c " };
+		String[] subject = {"math " , "english " , "??? ", "hadwja ", "wuajk " }; 
+		String[] title = {"mr." , "mrs."};
 		
-		String[] gender = {"male", "female"};
-		String[] firstNames = {"a" , "B" , "c", "d" , "e", "f" };
-		String[] familyNames = {"d" , "e", "f", "a" , "B" , "c" };
+	//	Person teacher = new Teacher(subject[x] , title[z] , age , firstNames[x], familyNames[y] , gender[z]);
+		Person student = new Student ( gpa, 12 , major[rand.nextInt(5)], age , firstNames[rand.nextInt(5)], familyNames[rand.nextInt(5)], gender[rand.nextInt(2)]);
+		System.out.print(title[z] );
+		System.out.print(firstNames[x] );
+		System.out.print(familyNames[y] );
+		System.out.println("teaches " + subject[x]);
 		
-		Person teacher1 = new Teacher("subject" , "title" , age , "sjad", familyNames[y] , "d");
-		
-		
-		System.out.println(firstNames[x]);
-		System.out.println(familyNames[y]);
-		
-		Person[] people = {teacher1};
-		people = new Person[10];
-		
-		for (int i = 0; i < people.length; i++) {
-			people[i] = PersonUtilities.randomShape();
+		//Person[] students; 
+		for (int i = 0 ; i<34 ; i++) 
+		{
+		System.out.println(student);
 		}
 		
-		for (Person people1  : people) {
-			System.out.println(people1);
-		}
-
 
 	}
-}
+		
+			
+			}
+
 
 	
 	
