@@ -24,6 +24,6 @@ public class Student extends Person {
 	public String toString() {
 		return getFirstName()+ "," + getFamilyName() + "GPA: "+ gpa + " Major: " +  major + getGender();
 	}
-
+	
 	
 }
